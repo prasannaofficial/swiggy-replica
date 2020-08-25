@@ -1,0 +1,270 @@
+ul{
+	margin-bottom:0;
+	padding-left:0;
+}
+
+.navbar-brand{
+	margin-right:0;
+}
+
+.slick-dots li button:before{
+	opacity: 1;
+	color: rgb(150, 150, 150);
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+	color: white;
+}
+
+.slick-prev {
+	left: 2px;
+	z-index: 10;
+}
+
+.slick-next {
+	right: 10px;
+	z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before{
+	font-size: 30px;
+}
+
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 1.2;
+	color: #282c3f ! important;
+	letter-spacing: 0;
+}
+
+.main-container {
+	padding: 0 20px;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	min-height: 80px;
+	background-color: #fff;
+	z-index: 100;
+	box-shadow: 0 15px 40px -20px rgba(40, 44, 63, .15);
+}
+
+.explore-pane {
+	margin-top: 80px;
+	/* min-height: 340px; */
+	background-color: #171a29;
+	padding-top:20px;
+	padding-bottom:1px;
+}
+
+.restaurants-pane {
+	background-color: #fff;
+	min-height: 100vh;
+	padding:20px 0px;
+	/* min-height: calc(100vh - 420px); */
+}
+
+.nav-bar {
+	/*	background-color: #000;s*/
+	min-height: 80px;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+}
+
+.full-menu {
+	width: 100%
+}
+
+.full-menu ul li {
+	display: inline-block;
+}
+
+.left-menu {
+	float: left;
+	/* max-width: 300px; bootstrap overridden*/
+	display: flex;
+	padding-left:40px;
+	/*	margin-left: 50px;*/
+}
+
+.left-menu li {
+	margin-right: 5px;
+}
+
+.address {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 300;
+}
+
+.right-menu {
+	float: right;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.right-menu li {
+	margin-left: 10px;
+}
+
+.right-menu ion-icon,
+.rest-head ion-icon {
+	padding-right: 10px;
+	margin-bottom: -4px;
+	font-weight: 400;
+	font-size: 20px;
+	color: #fc8019;
+}
+
+.image-container {
+		/* background-color: #000; */
+	/* min-height: 340px; */
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 0px;
+}
+
+.explore-img {
+	height: 260px;
+	width: 260px;
+	margin-right: 50px;
+}
+
+.rest-head {
+	/*	background-color: #000;*/
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+
+.rest-head ul li {
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 10px;
+	padding-left: 18px;
+}
+
+.rest-head ul li span {
+	font-weight: 600;
+}
+
+.rest-cards-container {
+	/* max-width: 1200px; //bootstarp overridden */
+	margin: 0 auto;
+	padding-top: 39px;
+}
+
+.rest-cards-row {
+	/* margin-bottom: 85px; */
+	display: flex;
+	flex-wrap: wrap;
+	margin:0 auto;
+	align-items: center;
+	justify-content: center;
+	/* justify-content: space-between; */
+}
+
+.rest-card{
+	padding: 20px 20px;
+	border: 1px solid #fff;
+}
+
+.rest-name {
+	margin-top: 14px;
+	font-size: 17px;
+	font-weight: 500;
+	word-break: break-word;
+}
+
+.rest-tag {
+	color: #686b78;
+	font-size: 13px;
+	margin-top: 4px;
+}
+
+.rest-row1 {
+	margin-top: 18px;
+	font-size:12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: #535665;
+	box-sizing: inherit;
+}
+
+.rest-row1 ion-icon {
+	font-size: 15px;
+	margin-top: -2px;
+}
+
+.rest-row1-rating {
+	display: flex;
+	align-items: center;
+	background-color: #48c479;
+	color: #fff;
+	height: 20px;
+	width: 43px;
+	padding: 0 5px;
+	font-weight: 400;
+}
+
+.rest-row2 {
+	border-top: 1px solid #e9e9eb;
+	padding-top: 14px;
+	margin-top: 14px;
+	color: #8a584b;
+	font-size:14px;
+	/* display: flex;
+    align-items: center; */
+	font-weight: 500;
+}
+
+.rest-row2 ion-icon {
+	margin-bottom: -3px;
+	font-size: 18px;
+}
+
+.rest-row3{
+	margin-top:14px;
+	padding-top:14px;
+	border-top:1px solid #e9e9eb;
+	font-size:13px;
+	color: #5d8ed5;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+	visibility: hidden;
+}
+
+.rest-card:hover{
+	border-color: #d3d5df;
+	box-shadow: 0 4px 7px 0 rgba(218,220,230,.6);
+}
+
+.rest-card:hover .rest-row3{
+	visibility: visible!important;
+}
+
