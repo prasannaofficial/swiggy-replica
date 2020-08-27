@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Order food online from India's best food delivery service. Order from restaurants near you</title>
 
+	<link rel="manifest" href="manifest.json">
+
 	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
 	<!-- Add the new slick-theme.css if you want the default styling -->
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
@@ -507,6 +509,15 @@
 			// Finally, let's save the current preference to localStorage to keep using it
 			localStorage.setItem("theme", theme);
 		});
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('./service-worker.js')
+				.then(function (registration) {
+					console.log('Registration successful, scope is:', registration.scope);
+				})
+				.catch(function (error) {
+					console.log('Service worker registration failed, error:', error);
+				});
+		}
 	</script>
 </body>
 
